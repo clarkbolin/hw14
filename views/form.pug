@@ -1,0 +1,16 @@
+doctype html
+html
+    head
+        title Form Page
+    body
+      form(action = "/", method = "post")
+         text Enter  a company name or ticker:
+         p
+         input(name = "requested" value = "")
+         p 
+         input(type='radio', name = "type" value = "name" checked="checked")
+         label(for = "name") Name
+         input(type='radio', name = "type" value = "symbol")  
+         label(for = "symbol") Symbol
+         p
+         button(type = "submit") Submit

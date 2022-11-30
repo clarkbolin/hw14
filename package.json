@@ -4,7 +4,7 @@
   "description": "Stock ticker App for CS20 homework #14",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node process.js"
   },
   "author": "Clark Bolin",
   "license": "ISC",
@@ -16,5 +16,13 @@
     "express": "^4.18.2",
     "multer": "^1.4.5-lts.1",
     "pug": "^3.0.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/clarkbolin/hw14.git"
+  },
+  "bugs": {
+    "url": "https://github.com/clarkbolin/hw14/issues"
+  },
+  "homepage": "https://github.com/clarkbolin/hw14#readme"
 }

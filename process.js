@@ -36,7 +36,7 @@ app.post('/', function (req, res) {
         }
 
         var dbo = db.db("hw14");
-        var collection = dbo.collection('equities1');
+        var collection = dbo.collection('equities');
         if (choice == "name") {
             theQuery = { name: company };
         }

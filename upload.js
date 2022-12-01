@@ -1,4 +1,3 @@
-var express = require('express');
 var fs = require('fs');
 var readline = require('readline');
 const mongoose = require('mongoose');
@@ -9,9 +8,7 @@ function main() {
         catch(error => handleError(error));
 
     var db = mongoose.connection;
-
     db.on('error', console.error.bind(console, 'connection error:'));
-
     db.once('open', function () {
         console.log("Connection Successful!");
     });
@@ -31,7 +28,7 @@ function main() {
     myFile.on('close', function () {
         companyArr.shift();
     
-        var collection = db.collection('equities1');
+        var collection = db.collection('equities');
         collection.insertMany(companyArr, (err, res) => {
           if (err) throw err;
           db.close();
